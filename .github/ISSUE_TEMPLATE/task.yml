@@ -1,0 +1,41 @@
+name: 📝 Task
+description: Create a task for the project backlog
+title: "[Task]: "
+labels: ["task", "backlog"]
+assignees: []
+body:
+  - type: input
+    id: summary
+    attributes:
+      label: Task Summary
+      description: Briefly describe the task
+      placeholder: "Implement login page UI"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: More context, steps, or notes
+      placeholder: "This task involves creating the login form with validation..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - P1 (High)
+        - P2 (Medium)
+        - P3 (Low)
+        - P4 (Not required)
+    validations:
+      required: true
+
+  - type: input
+    id: due
+    attributes:
+      label: Due Date
+      placeholder: "YYYY-MM-DD"

@@ -1,0 +1,28 @@
+name: 🚀 Feature Request
+description: Suggest a new feature
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: input
+    id: feature
+    attributes:
+      label: Feature Summary
+      description: Short title for the feature
+      placeholder: "Add dark mode toggle"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this needed?
+      description: Explain the problem it solves
+      placeholder: "Users want a dark theme for better night-time use"
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional context
+      description: Anything else (designs, references, etc.)

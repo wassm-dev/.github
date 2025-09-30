@@ -1,0 +1,28 @@
+name: 🐞 Bug Report
+description: Report a bug or issue
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue and expected behavior
+      placeholder: "The login button doesn't respond..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps to trigger the bug
+      placeholder: "1. Go to login page\n2. Enter credentials\n3. Click Login"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      placeholder: "OS, browser, version..."
