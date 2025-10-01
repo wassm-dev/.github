@@ -1,41 +1,41 @@
-name: 📝 Task
-description: Create a task for the project backlog
-title: "[Task]: "
-labels: ["task", "backlog"]
+name: 📝 Tarea
+description: Crear una tarea para el product backlog
+title: "[Tarea]: "
+labels: ["tarea", "backlog"]
 assignees: []
 body:
   - type: input
     id: summary
     attributes:
-      label: Task Summary
-      description: Briefly describe the task
-      placeholder: "Implement login page UI"
+      label: Resumen de la tarea
+      description: Breve descripción de la tarea
+      placeholder: "Implementar pantalla de inicio de sesión"
     validations:
       required: true
 
   - type: textarea
     id: details
     attributes:
-      label: Details
-      description: More context, steps, or notes
-      placeholder: "This task involves creating the login form with validation..."
+      label: Detalles
+      description: Más contexto, pasos o notas
+      placeholder: "Esta tarea incluye la creación del formulario de login con validación..."
     validations:
       required: false
 
   - type: dropdown
     id: priority
     attributes:
-      label: Priority
+      label: Prioridad
       options:
-        - P1 (High)
-        - P2 (Medium)
-        - P3 (Low)
-        - P4 (Not required)
+        - P1 (Alta)
+        - P2 (Media)
+        - P3 (Baja)
+        - P4 (No requerido)
     validations:
       required: true
 
   - type: input
     id: due
     attributes:
-      label: Due Date
-      placeholder: "YYYY-MM-DD"
+      label: Fecha límite
+      placeholder: "AAAA-MM-DD"
